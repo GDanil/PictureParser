@@ -113,7 +113,7 @@ public class Main
     {
         WebElement image = webDriver.findElement(By.tagName("img"));
         File picture = image.getScreenshotAs(OutputType.FILE);
-        new File(query).mkdir();
+        new File(query).ппшеmkdir();
         try
         {
             FileUtils.copyFile(picture, new File(query + "/" + numberImage + ".jpeg")); // копирует файл picture в новый файл с именем
